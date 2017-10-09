@@ -8,8 +8,26 @@ defmodule PagerdutyEx.Mixfile do
      elixirc_paths: elixirc_paths(Mix.env),
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     description: description(),
+     package: package(),
      aliases: [compile: ["compile --warnings-as-errors"]],
      deps: deps()]
+  end
+
+  defp package do
+    [
+      name: :pagerduty_ex,
+      files: ["lib", "mix.exs", "README*", "LICENSE*"],
+      maintainers: ["acjensen@gmail.com"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/acj/pagerduty_ex"}
+    ]
+  end
+
+  defp description do
+    """
+    A simple client library for PagerDuty API v2.
+    """
   end
 
   # Configuration for the OTP application
