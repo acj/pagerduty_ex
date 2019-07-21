@@ -1,5 +1,7 @@
 # PagerdutyEx
 
+[![Build Status](https://travis-ci.org/acj/pagerduty_ex.svg?branch=master)](https://travis-ci.org/acj/pagerduty_ex) [![Coverage Status](https://coveralls.io/repos/github/acj/pagerduty_ex/badge.svg?branch=master)](https://coveralls.io/github/acj/pagerduty_ex?branch=master)
+
 A simple client library for PagerDuty API v2.
 
 ## Getting Started
