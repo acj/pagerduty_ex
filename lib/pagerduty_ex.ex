@@ -46,8 +46,12 @@ defmodule PagerDutyEx do
   end
 
   defp post_with_retry(payload) do
-    retry with: exp_backoff() |> randomize |> expiry(15_000) do
+    retry with: exponential_backoff() |> randomize |> expiry(15_000) do
       post(payload)
+    after
+      result -> result
+    else
+      error -> error
     end
   end
 
