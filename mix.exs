@@ -56,10 +56,10 @@ defmodule PagerdutyEx.Mixfile do
   defp deps do
     [
       {:cowboy, "~> 1.0", only: :test},
-      {:ex_doc, ">= 0.0.0", only: :dev},
-      {:httpoison, "~> 0.11.1"},
-      {:poison, "~> 3.1"},
-      {:retry, "~> 0.6"},
+      {:ex_doc, "~> 0.21", only: :dev},
+      {:httpoison, "~> 1.5"},
+      {:poison, "~> 4.0"},
+      {:retry, "~> 0.13"},
     ]
   end
 
