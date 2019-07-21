@@ -11,7 +11,10 @@ defmodule PagerdutyEx.Mixfile do
      description: description(),
      package: package(),
      aliases: [compile: ["compile --warnings-as-errors"]],
-     deps: deps()]
+     deps: deps(),
+     test_coverage: [tool: ExCoveralls],
+     preferred_cli_env: [coveralls: :test, "coveralls.detail": :test, "coveralls.post": :test, "coveralls.html": :test]
+    ]
   end
 
   defp package do
@@ -60,6 +63,7 @@ defmodule PagerdutyEx.Mixfile do
       {:httpoison, "~> 1.5"},
       {:poison, "~> 4.0"},
       {:retry, "~> 0.13"},
+      {:excoveralls, "~> 0.10", only: :test}
     ]
   end
 
