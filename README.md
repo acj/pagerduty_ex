@@ -1,6 +1,9 @@
 # PagerdutyEx
 
-[![Build Status](https://travis-ci.org/acj/pagerduty_ex.svg?branch=master)](https://travis-ci.org/acj/pagerduty_ex) [![Coverage Status](https://coveralls.io/repos/github/acj/pagerduty_ex/badge.svg?branch=master)](https://coveralls.io/github/acj/pagerduty_ex?branch=master)
+[![Hex.pm](https://img.shields.io/hexpm/v/pagerduty_ex.svg)](https://hex.pm/packages/pagerduty_ex)
+[![Build Docs](https://img.shields.io/badge/hexdocs-release-blue.svg)](https://hexdocs.pm/pagerduty_ex/PagerDutyEx.html)
+[![Build Status](https://travis-ci.org/acj/pagerduty_ex.svg?branch=master)](https://travis-ci.org/acj/pagerduty_ex)
+[![Coverage Status](https://coveralls.io/repos/github/acj/pagerduty_ex/badge.svg?branch=master)](https://coveralls.io/github/acj/pagerduty_ex?branch=master)
 
 A simple client library for PagerDuty API v2.
 
